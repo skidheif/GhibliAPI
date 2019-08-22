@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A09E0C0C230E6B9E0041E976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E0C0B230E6B9E0041E976 /* AppDelegate.swift */; };
-		A09E0C0E230E6B9E0041E976 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E0C0D230E6B9E0041E976 /* ViewController.swift */; };
+		A09E0C0E230E6B9E0041E976 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E0C0D230E6B9E0041E976 /* FilmsViewController.swift */; };
 		A09E0C11230E6B9E0041E976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09E0C0F230E6B9E0041E976 /* Main.storyboard */; };
 		A09E0C13230E6B9E0041E976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A09E0C12230E6B9E0041E976 /* Assets.xcassets */; };
 		A09E0C16230E6B9E0041E976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09E0C14230E6B9E0041E976 /* LaunchScreen.storyboard */; };
+		A09E0C1E230E79960041E976 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E0C1D230E79960041E976 /* Films.swift */; };
+		A09E0C20230E7D7D0041E976 /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E0C1F230E7D7D0041E976 /* FilmCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A09E0C08230E6B9E0041E976 /* GhibliAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GhibliAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09E0C0B230E6B9E0041E976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A09E0C0D230E6B9E0041E976 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A09E0C0D230E6B9E0041E976 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
 		A09E0C10230E6B9E0041E976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A09E0C12230E6B9E0041E976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A09E0C15230E6B9E0041E976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A09E0C17230E6B9E0041E976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A09E0C1D230E79960041E976 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
+		A09E0C1F230E7D7D0041E976 /* FilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				A09E0C0B230E6B9E0041E976 /* AppDelegate.swift */,
-				A09E0C0D230E6B9E0041E976 /* ViewController.swift */,
+				A09E0C0D230E6B9E0041E976 /* FilmsViewController.swift */,
 				A09E0C0F230E6B9E0041E976 /* Main.storyboard */,
 				A09E0C12230E6B9E0041E976 /* Assets.xcassets */,
 				A09E0C14230E6B9E0041E976 /* LaunchScreen.storyboard */,
 				A09E0C17230E6B9E0041E976 /* Info.plist */,
+				A09E0C1D230E79960041E976 /* Films.swift */,
+				A09E0C1F230E7D7D0041E976 /* FilmCell.swift */,
 			);
 			path = GhibliAPI;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A09E0C0E230E6B9E0041E976 /* ViewController.swift in Sources */,
+				A09E0C0E230E6B9E0041E976 /* FilmsViewController.swift in Sources */,
+				A09E0C20230E7D7D0041E976 /* FilmCell.swift in Sources */,
+				A09E0C1E230E79960041E976 /* Films.swift in Sources */,
 				A09E0C0C230E6B9E0041E976 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -83,12 +83,12 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="filmDecription" destination="JHn-8B-Wdc" id="xYU-2h-QxC"/>
-                                    <outlet property="filmDirector" destination="X2h-Bz-vtC" id="3pN-5I-i99"/>
-                                    <outlet property="filmProducer" destination="RWe-SP-vEW" id="2q4-4O-B1f"/>
-                                    <outlet property="filmRating" destination="a8K-YP-Zxi" id="qsI-JP-oyk"/>
-                                    <outlet property="filmReleaseDate" destination="gDy-MY-opR" id="Q1w-Lp-yey"/>
-                                    <outlet property="filmTitle" destination="Gsg-FS-s5e" id="kzw-ed-63v"/>
+                                    <outlet property="filmDecription" destination="JHn-8B-Wdc" id="pBQ-hv-Adb"/>
+                                    <outlet property="filmDirector" destination="X2h-Bz-vtC" id="QMD-ZP-7mC"/>
+                                    <outlet property="filmProducer" destination="RWe-SP-vEW" id="PlA-5I-oOS"/>
+                                    <outlet property="filmRating" destination="a8K-YP-Zxi" id="GgE-Gf-ZTH"/>
+                                    <outlet property="filmReleaseDate" destination="gDy-MY-opR" id="V7M-1O-GLi"/>
+                                    <outlet property="filmTitle" destination="Gsg-FS-s5e" id="xVu-2A-3v2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

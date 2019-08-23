@@ -21,8 +21,8 @@ class FilmCell: UITableViewCell {
         filmDecription.text = films.description
         filmDirector.text = films.director
         filmProducer.text = films.producer
-        filmReleaseDate.text = "Year: \(films.release_date ?? 0)"
-        filmRating.text = "Rotten Tomatoes score: \(films.rt_score ?? 0)"
+        filmReleaseDate.text = "Year: \(films.release_date ?? "0")"
+        filmRating.text = "Rotten Tomatoes score: \(films.rt_score ?? "0")"
     }
     
 }

@@ -11,6 +11,6 @@ struct Films: Decodable {
     let description: String?
     let director: String?
     let producer: String?
-    let release_date: Int?
-    let rt_score: Int?
+    let release_date: String?
+    let rt_score: String?
 }

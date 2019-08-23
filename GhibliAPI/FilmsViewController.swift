@@ -10,18 +10,15 @@ import UIKit
 
 class FilmsViewController: UITableViewController {
     
-    
-    @IBOutlet var activityIndicator: UIActivityIndicatorView!
-    
     private let ghibliAPI = "https://ghibliapi.herokuapp.com/films"
     private var films: [Films] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
-        activityIndicator.startAnimating()
-        activityIndicator.hidesWhenStopped = true
     }
+    
+    // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return films.count
@@ -35,6 +32,8 @@ class FilmsViewController: UITableViewController {
         
         return cell
     }
+    
+    // MARK: - TableViewDelegate
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
@@ -57,9 +56,7 @@ class FilmsViewController: UITableViewController {
             
             do {
                 self.films = try JSONDecoder().decode([Films].self, from: data)
-//                DispatchQueue.main.async {
-//                    self.activityIndicator.stopAnimating()
-//                }
+                print(self.films)
             } catch let error {
                 print(error)
             }

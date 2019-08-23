@@ -17,12 +17,14 @@ class FilmCell: UITableViewCell {
     @IBOutlet var filmRating: UILabel!
     
     func configureCell(with films: Films) {
-        filmTitle.text = films.title
-        filmDecription.text = films.description
-        filmDirector.text = films.director
-        filmProducer.text = films.producer
-        filmReleaseDate.text = "Year: \(films.release_date ?? "0")"
-        filmRating.text = "Rotten Tomatoes score: \(films.rt_score ?? "0")"
+        DispatchQueue.main.async {
+            self.filmTitle.text = films.title
+            self.filmDecription.text = films.description
+            self.filmDirector.text = films.director
+            self.filmProducer.text = films.producer
+            self.filmReleaseDate.text = "Year: \(films.release_date ?? "0")"
+            self.filmRating.text = "Rotten Tomatoes score: \(films.rt_score ?? "0")"
+        }
     }
     
 }

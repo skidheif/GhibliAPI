@@ -36,7 +36,7 @@ class FilmsViewController: UITableViewController {
     // MARK: - TableViewDelegate
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 450
     }
     
     func fetchData(){
@@ -56,7 +56,9 @@ class FilmsViewController: UITableViewController {
             
             do {
                 self.films = try JSONDecoder().decode([Films].self, from: data)
-                print(self.films)
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             } catch let error {
                 print(error)
             }

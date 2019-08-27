@@ -18,11 +18,10 @@ class FilmCell: UITableViewCell {
     
     func configureCell(with films: Films) {
         filmTitle.text = "Title: \(films.title ?? "None")"
-            filmDecription.text = "Description: \(films.description ?? "None")"
-            filmDirector.text = "Director: \(films.director ?? "None")"
-            filmProducer.text = "Producer: \(films.producer ?? "None")"
-            filmReleaseDate.text = "Year: \(films.release_date ?? "0")"
-            filmRating.text = "Rotten Tomatoes score: \(films.rt_score ?? "0")"
+        filmDecription.text = "Description: \(films.description ?? "None")"
+        filmDirector.text = "Director: \(films.director ?? "None")"
+        filmProducer.text = "Producer: \(films.producer ?? "None")"
+        filmReleaseDate.text = "Year: \(films.releaseDate ?? "0")"
+        filmRating.text = "Rotten Tomatoes score: \(films.rtScore ?? "0")"
     }
-    
 }

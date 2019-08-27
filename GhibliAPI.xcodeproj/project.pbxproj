@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		A09E0C16230E6B9E0041E976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09E0C14230E6B9E0041E976 /* LaunchScreen.storyboard */; };
 		A09E0C1E230E79960041E976 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E0C1D230E79960041E976 /* Films.swift */; };
 		A09E0C20230E7D7D0041E976 /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09E0C1F230E7D7D0041E976 /* FilmCell.swift */; };
+		FE2F268617BC079580E12CA5 /* Pods_GhibliAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EC54E247FE6BE7B97B2AA5 /* Pods_GhibliAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		A09E0C17230E6B9E0041E976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A09E0C1D230E79960041E976 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
 		A09E0C1F230E7D7D0041E976 /* FilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
+		B2EC54E247FE6BE7B97B2AA5 /* Pods_GhibliAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GhibliAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF24403EFADB227D0F4C8360 /* Pods-GhibliAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GhibliAPI.debug.xcconfig"; path = "Target Support Files/Pods-GhibliAPI/Pods-GhibliAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		F61C6A7850E599CDABBA7B60 /* Pods-GhibliAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GhibliAPI.release.xcconfig"; path = "Target Support Files/Pods-GhibliAPI/Pods-GhibliAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2F268617BC079580E12CA5 /* Pods_GhibliAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4697E6BF0D0DE13E0E9EC850 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF24403EFADB227D0F4C8360 /* Pods-GhibliAPI.debug.xcconfig */,
+				F61C6A7850E599CDABBA7B60 /* Pods-GhibliAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9AC6883F5A2362453309EEFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2EC54E247FE6BE7B97B2AA5 /* Pods_GhibliAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A09E0BFF230E6B9E0041E976 = {
 			isa = PBXGroup;
 			children = (
 				A09E0C0A230E6B9E0041E976 /* GhibliAPI */,
 				A09E0C09230E6B9E0041E976 /* Products */,
+				4697E6BF0D0DE13E0E9EC850 /* Pods */,
+				9AC6883F5A2362453309EEFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A09E0C1A230E6B9E0041E976 /* Build configuration list for PBXNativeTarget "GhibliAPI" */;
 			buildPhases = (
+				5818C354F059F0CC4E15EA61 /* [CP] Check Pods Manifest.lock */,
 				A09E0C04230E6B9E0041E976 /* Sources */,
 				A09E0C05230E6B9E0041E976 /* Frameworks */,
 				A09E0C06230E6B9E0041E976 /* Resources */,
+				0452569DCFF10FA2C9D224F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0452569DCFF10FA2C9D224F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GhibliAPI/Pods-GhibliAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GhibliAPI/Pods-GhibliAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GhibliAPI/Pods-GhibliAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5818C354F059F0CC4E15EA61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GhibliAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A09E0C04230E6B9E0041E976 /* Sources */ = {
@@ -288,11 +356,13 @@
 		};
 		A09E0C1B230E6B9E0041E976 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF24403EFADB227D0F4C8360 /* Pods-GhibliAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T73YVX6576;
 				INFOPLIST_FILE = GhibliAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,11 +376,13 @@
 		};
 		A09E0C1C230E6B9E0041E976 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F61C6A7850E599CDABBA7B60 /* Pods-GhibliAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T73YVX6576;
 				INFOPLIST_FILE = GhibliAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class FilmsViewController: UITableViewController {
     
@@ -15,7 +16,7 @@ class FilmsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
+        fetchDataWithAlamofire()
     }
     
     // MARK: - Table view data source
@@ -39,29 +40,21 @@ class FilmsViewController: UITableViewController {
         return 450
     }
     
-    func fetchData(){
+    
+    func fetchDataWithAlamofire(){
         guard let url = URL(string: ghibliAPI) else { return }
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        request(url).validate().responseJSON { dataResponse in
             
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            
-            if let response = response {
-                print(response)
-            }
-            
-            guard let data = data else { return }
-            
-            do {
-                self.films = try JSONDecoder().decode([Films].self, from: data)
+            switch dataResponse.result {
+            case .success(let value):
+                self.films = Films.getFilms(from: value)
+                print(self.films)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-            } catch let error {
+            case .failure(let error):
                 print(error)
             }
-        }.resume()
+        }
     }
 }
